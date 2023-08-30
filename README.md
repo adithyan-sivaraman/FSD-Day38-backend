@@ -83,8 +83,8 @@ task updated successfully
 ## Installation and Setup
 
 1.  Clone this repository.
-2.  Install dependencies using `npm install`.
-3.  Start the server using `npm run start`.
+2.  Install dependencies using <pre>npm install</pre>
+3.  Start the server using  <pre>npm run start</pre>
 4.  In case of Development environment, start the server using `npm run dev'.
 5. Clone the front end UI from this repository [frontend](https://github.com/adithyan-sivaraman/FSD-Day38-frontend)
 6.  Create a .env file in root directory and set environment variables.
