@@ -84,10 +84,9 @@ task updated successfully
 
 1.  Clone this repository.
 2.  Install dependencies using <pre>npm install</pre>
-3.  Start the server using  <pre>npm run start</pre>
-4.  In case of Development environment, start the server using `npm run dev'.
-5. Clone the front end UI from this repository [frontend](https://github.com/adithyan-sivaraman/FSD-Day38-frontend)
-6.  Create a .env file in root directory and set environment variables.
+3.  Start the server or development server using  <pre>npm run start </pre> or <pre>npm run dev </pre> 
+4. Clone the front end UI from this repository [frontend](https://github.com/adithyan-sivaraman/FSD-Day38-frontend)
+5.  Create a .env file in root directory and set environment variables.
 
         - In case of local mongo db
                 - MONGO_DB={your database name}
