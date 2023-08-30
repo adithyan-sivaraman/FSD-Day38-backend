@@ -6,7 +6,7 @@
 
 ### Add a new task
 
-1. Endpoint: `/task/add` 
+1. Endpoint: `/task/add`
 
 2. Method: POST
 
@@ -18,18 +18,21 @@
      - date is in the format of <input type = "datetime-local">
      - Please specify the key names exactly as mentioned below
    - example request :
-     { title: 'learn something',
-     date: '2023-09-13T22:52',
-     status: 'pending'}
+      <pre>
+        { title: 'learn something',
+        date: '2023-09-13T22:52',
+        status: 'pending'}
+   </pre>
 
 5. Example Response in json format
-
-    - {
-        "title": "learn something",
-        "date": "2023-09-13T22:52",
-        "status": "pending",
-        "id": 9
-        }
+<pre>
+    {
+     "title": "learn something",
+     "date": "2023-09-13T22:52",
+     "status": "pending",
+     "id": 9
+     }
+</pre>
 
 ### Fetch list of tasks for
 
@@ -40,7 +43,8 @@
 3. Request Parameters : Not required.
 
 4. Example Response
-    - {
+<pre>
+    {
         "complete": [
         {
         "id": 1,
@@ -59,6 +63,7 @@
         }
         ]
         }
+</pre>
 
 ### Update Completed tasks
 
@@ -73,8 +78,8 @@
    - Note : Please specify the key names exactly as mentioned below
    - example request :
      - [{
-        "id": 7,"title": "learn something","date":"2023-09-13T22:52","status":"pending"
-        }]
+       "id": 7,"title": "learn something","date":"2023-09-13T22:52","status":"pending"
+       }]
 
 5. Example Response in text format
 
@@ -84,8 +89,8 @@ task updated successfully
 
 1.  Clone this repository.
 2.  Install dependencies using <pre>npm install</pre>
-3.  Start the server or development server using  <pre>npm run start </pre> or <pre>npm run dev </pre> 
-4. Clone the front end UI from this repository [frontend](https://github.com/adithyan-sivaraman/FSD-Day38-frontend)
+3.  Start the server or development server using <pre>npm run start </pre> or <pre>npm run dev </pre>
+4.  Clone the front end UI from this repository [frontend](https://github.com/adithyan-sivaraman/FSD-Day38-frontend)
 5.  Create a .env file in root directory and set environment variables.
 
         - In case of local mongo db
@@ -97,7 +102,7 @@ task updated successfully
                 - MONGO_PASSWORD={password}
                 - MONGO_CLUSTER={cluster name} eg. `cluster.oaqy8cr.mongodb.net`
 
-7.  in connection.js set local or cloud url in mongoose.connect function
+6.  in connection.js set local or cloud url in mongoose.connect function
 
 ## Usage
 
