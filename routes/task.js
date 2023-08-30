@@ -25,7 +25,6 @@ router.get('/fetch', async (req, res) => {
 
 router.put('/complete', async(req, res) => {
     const completeTask = req.body;
-    console.log(completeTask);
     const taskID = completeTask.map(task => task.id);
     const date = new Date();
     await  taskModel.updateMany({ id: { $in: taskID } },{ $set: { status: 'complete' ,completed:date.toISOString()} });
